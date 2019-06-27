@@ -5,22 +5,17 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace CSMultyThreading
+namespace CSMultyThreading2
 {
     class Program
     {
         static void Main(string[] args)
         {
             Data shareData = new Data();
-            Thread t1 = new Thread(new Controller() {data = shareData }.increase);
-            Thread t2 = new Thread(new Controller() { data = shareData }.increase);
+            Thread t1 = new Thread(new Controller() { data = shareData, id = 1 }.DoWork);
+            Thread t2 = new Thread(new Controller() { data = shareData, id = 2 }.DoWork);
             t1.Start();
             t2.Start();
-            t1.Join();
-            t2.Join();
-
-            Console.WriteLine(shareData.count);
-            //Thread.Sleep(1000);
         }
     }
 }

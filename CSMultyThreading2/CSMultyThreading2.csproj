@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B0989C99-B1F6-488B-9AB8-222CD7BAFA4C}</ProjectGuid>
+    <ProjectGuid>{FDF06DD4-80CC-4B1B-8209-757A6C73D8DC}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>CSMultyThreading</RootNamespace>
-    <AssemblyName>CSMultyThreading</AssemblyName>
+    <RootNamespace>CSMultyThreading2</RootNamespace>
+    <AssemblyName>CSMultyThreading2</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
